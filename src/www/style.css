@@ -1,0 +1,29 @@
+button {
+  display: block;
+  padding: 12px;
+  margin: 8px auto;
+  width: 150px;
+  background: #ccc;
+  border: none;
+  font-size: 14px;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.profile h2 {
+  margin: 0;
+}
