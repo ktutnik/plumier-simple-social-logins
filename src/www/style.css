@@ -27,3 +27,8 @@ button {
 .profile h2 {
   margin: 0;
 }
+
+.github {
+  margin-top: 50px;
+  text-align: center;
+}

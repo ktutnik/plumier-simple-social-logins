@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@plumier/serve-static": "^1.0.0-rc1.29",
-    "@plumier/social-login": "^1.0.0-rc1.29",
+    "@plumier/serve-static": "^1.0.0-rc1.30",
+    "@plumier/social-login": "^1.0.0-rc1.30",
     "@types/dotenv": "^8.2.0",
     "dotenv": "^8.2.0",
-    "plumier": "^1.0.0-rc1.29"
+    "plumier": "^1.0.0-rc1.30"
   },
   "devDependencies": {
     "ts-node-dev": "1.0.0-pre.44",
