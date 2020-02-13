@@ -7,7 +7,7 @@ export class HerokuForceHttpsFacility extends DefaultFacility {
         app.use(async invocation => {
             if (process.env.NODE_ENV === "production") {
                 const req = invocation.ctx.request;
-                if (req.headers["x-forwarded-proto"] !== "https") {
+                if (req.protocol !== "https") {
                     return response.redirect(`https://${req.hostname}${req.originalUrl}`)
                 }
             }
