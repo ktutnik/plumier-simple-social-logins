@@ -2,6 +2,7 @@ import { ServeStaticFacility } from "@plumier/serve-static"
 import * as oAuth from "@plumier/social-login"
 import dotenv from "dotenv"
 import Plumier, { bind, response, route, WebApiFacility } from "plumier"
+import { HerokuForceHttpsFacility } from "./heroku-facility"
 
 dotenv.config()
 
@@ -18,6 +19,7 @@ export class AuthController {
 }
 
 new Plumier()
+    .set(new HerokuForceHttpsFacility())
     .set(new WebApiFacility({ controller: __filename }))
     .set(new ServeStaticFacility())
     .set(new oAuth.FacebookOAuthFacility())
@@ -26,5 +28,5 @@ new Plumier()
     .set(new oAuth.GitLabOAuthFacility())
     .set(new oAuth.TwitterOAuthFacility())
     .initialize()
-    .then(x => x.listen(process.env.PORT))
+    .then(x => x.listen(process.env.PORT || 8000))
     .catch(console.error)
