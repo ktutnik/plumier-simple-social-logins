@@ -2,7 +2,6 @@ import { ServeStaticFacility } from "@plumier/serve-static"
 import * as oAuth from "@plumier/social-login"
 import dotenv from "dotenv"
 import Plumier, { bind, response, route, WebApiFacility } from "plumier"
-import { HerokuForceHttpsFacility } from "./heroku-facility"
 
 dotenv.config()
 
@@ -19,8 +18,7 @@ export class AuthController {
 }
 
 new Plumier()
-    .set(new HerokuForceHttpsFacility())
-    .set(new WebApiFacility({ controller: __filename }))
+    .set(new WebApiFacility({ controller: __filename, trustProxyHeader: true, forceHttps:true }))
     .set(new ServeStaticFacility())
     .set(new oAuth.FacebookOAuthFacility())
     .set(new oAuth.GoogleOAuthFacility())

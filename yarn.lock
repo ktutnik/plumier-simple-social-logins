@@ -9,10 +9,10 @@
   dependencies:
     vary "^1.1.2"
 
-"@plumier/core@1.0.0-rc1.30+30e9726":
-  version "1.0.0-rc1.30"
-  resolved "https://registry.yarnpkg.com/@plumier/core/-/core-1.0.0-rc1.30.tgz#d4d84676656db60905cfcd399f88de5bb56abdd9"
-  integrity sha512-vTVbRMK88ZHl5DQ+kczjFzNDKLp9O63WPA1+2E7cDncoyXkI4IYA5MB02Zfxs+eYZ3Mnf5FCI/4NvrycEinvHQ==
+"@plumier/core@1.0.0-rc1.33+aa17255":
+  version "1.0.0-rc1.33"
+  resolved "https://registry.yarnpkg.com/@plumier/core/-/core-1.0.0-rc1.33.tgz#5bfdb1e72071c7cb4aa6ee81befe582ec4c01494"
+  integrity sha512-1P4+ZbcKB9QHV3Vr1QoI8xluFWJFVfJ9nEHNGC97PGVTpkrID4GzVqjnM9uWk2g13zu/PxRIRyeME4xIrBZL2w==
   dependencies:
     "@types/glob" "^7.1.1"
     "@types/koa" "^2.11.0"
@@ -23,23 +23,23 @@
     tslib "^1.10.0"
     typedconverter "^2.2.0"
 
-"@plumier/serve-static@^1.0.0-rc1.30":
-  version "1.0.0-rc1.30"
-  resolved "https://registry.yarnpkg.com/@plumier/serve-static/-/serve-static-1.0.0-rc1.30.tgz#e90c01bc7bd4f6cc66217284422b169e494ededd"
-  integrity sha512-WM/ty1ZGE/kHQ6IAvGf5gE7BgGamp91YhbEkJ3JRiVcNBkRD2eFKN70IJDGMCNtljxO1/WNUURnz0X7ZkViAAA==
+"@plumier/serve-static@^1.0.0-rc1.33":
+  version "1.0.0-rc1.33"
+  resolved "https://registry.yarnpkg.com/@plumier/serve-static/-/serve-static-1.0.0-rc1.33.tgz#6e98492c028a0027d4cc787ce4d6fef583b9260e"
+  integrity sha512-rWciSkFd+sIWFr8Fq4ntSHh3KNVqjoADQssMl9fQ2oW+c6kn3gr19m+THLAJcPUaUPC7vGcw3v35GggidMTn4A==
   dependencies:
-    "@plumier/core" "1.0.0-rc1.30+30e9726"
+    "@plumier/core" "1.0.0-rc1.33+aa17255"
     "@types/koa-send" "^4.1.2"
     "@types/mime-types" "2.1.0"
     koa-send "^5.0.0"
     mime-types "2.1.26"
 
-"@plumier/social-login@^1.0.0-rc1.30":
-  version "1.0.0-rc1.30"
-  resolved "https://registry.yarnpkg.com/@plumier/social-login/-/social-login-1.0.0-rc1.30.tgz#de1125f8e90f64fdd0be29e03ee7e26430ee1a10"
-  integrity sha512-+pCSrv7lv7nqjfEpvD8KaR5SBoXrdRwVaBeMd9XX7X6CWWhGvwb9ImRBFPwlWosHzeIFWDx/jP3dXFdyEwF2Pg==
+"@plumier/social-login@^1.0.0-rc1.33":
+  version "1.0.0-rc1.33"
+  resolved "https://registry.yarnpkg.com/@plumier/social-login/-/social-login-1.0.0-rc1.33.tgz#711b52476a3550c56ce0383dd5b96b9e99a7f6b0"
+  integrity sha512-h9Q5QWgT/4pVJvRoAY6wFedwfPZmGgXt+NFsnmYx7zfqwfSITBydZBeOjKNeSK9d+79db+mQPI9Eq05sIuLi3w==
   dependencies:
-    "@plumier/core" "1.0.0-rc1.30+30e9726"
+    "@plumier/core" "1.0.0-rc1.33+aa17255"
     "@types/axios" "0.14.0"
     "@types/csrf" "^1.3.2"
     "@types/debug" "^4.1.5"
@@ -1000,13 +1000,13 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-plumier@^1.0.0-rc1.30:
-  version "1.0.0-rc1.30"
-  resolved "https://registry.yarnpkg.com/plumier/-/plumier-1.0.0-rc1.30.tgz#f239f32d7d48ab573fc948e30321a34a1dd39d5e"
-  integrity sha512-4QTlulnfMAqf8V0vxovs//Y5S6JJdWba6UGMOuWHCZTA0bCOvCAtadSwOQZY8e2Q8DXBCQsfMmTi4LK/zobKJQ==
+plumier@^1.0.0-rc1.33:
+  version "1.0.0-rc1.33"
+  resolved "https://registry.yarnpkg.com/plumier/-/plumier-1.0.0-rc1.33.tgz#9cab67128cc67a98244d2a1cc6a42fa6541582dd"
+  integrity sha512-TJbCp6hk4/FI7J/nm3S4ozdHKgixcumVkkJOx1UACWk6pYDVoiJwPsfZSDVSefshL6Lra4a5JrzgCZoKDFVwLA==
   dependencies:
     "@koa/cors" "^3.0.0"
-    "@plumier/core" "1.0.0-rc1.30+30e9726"
+    "@plumier/core" "1.0.0-rc1.33+aa17255"
     "@types/bytes" "^3.1.0"
     "@types/koa__cors" "^3.0.1"
     bytes "^3.1.0"
