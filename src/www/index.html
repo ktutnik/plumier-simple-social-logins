@@ -26,6 +26,7 @@
         (function() {
             // message sent by server response.postMessage() received here
             window.addEventListener("message", evt => {
+                // security best practice! make sure the event origin comes from the same origin
                 if (evt.origin === location.origin && evt.data.status === "Success") {
                     evt.source.close();
                     const user = evt.data.user
