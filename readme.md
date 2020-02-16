@@ -3,6 +3,10 @@ Simplest social login example with Facebook, Google, GitHub, GitLab and Twitter
 
 [https://plumier-simple-social-login.herokuapp.com/](https://plumier-simple-social-login.herokuapp.com/)
 
+
+> This example code uses Plumier framework entirely, If you are new to Plumier take a look at the [fundamental](https://plumierjs.com/docs/fundamentals) documentation to get started.
+
+
 ## Local Development Setup
 * Git fork/clone 
 * Create OAuth application for each provider ([Facebook](https://developers.facebook.com/), [Google](https://console.developers.google.com/), [GitHub](https://github.com/settings/developers), [GitLab](https://gitlab.com/profile/applications), [Twitter](https://developer.twitter.com/))
